@@ -26,8 +26,8 @@ app_settings = os.getenv(
     'APP_SETTINGS',
     'project.server.config.DevelopmentConfig'
 )
-# print(app_settings)
-print(sys.path)
+print("app settings:", app_settings)
+print("sys path", sys.path)
 # sys.path.append('/Users/danieldelijani/Desktop/CS_519/spark-se-assessment')
 # print(sys.path)
 app.config.from_object(app_settings)
