@@ -1,5 +1,5 @@
 #!/bin/bash
 
-flask db init
-flask db migrate -m "Initial migration."
-flask db upgrade
+python project/server/__init__.py db init
+python project/server/__init__.py db migrate -m "Initial migration."
+python project/server/__init__.py db upgrade
